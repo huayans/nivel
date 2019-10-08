@@ -78,7 +78,7 @@
                 Digite o número de estadias:<br>
                     <input type="number" name="estadias_n"><br>
                 Sua passagem custa:<br>
-                    <input type="text" name="custo_p"><br><br>
+                    <input type="text" name="custo_p" placeholder=""><br><br>
 
                     <input type="submit"><br><br>
                 </form><br>

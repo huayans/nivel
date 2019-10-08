@@ -89,8 +89,8 @@
                         </select>
                         
                         <select class="custom-select" name="semana" id="inputGroupSelect01">
-                            <option name="dias" value="1">Dias semanais + sabados</option>
-                            <option name="dom" value="2">Domingos</option>
+                            <option name="dias" value="6">Dias semanais + sabados</option>
+                            <option name="dom" value="7">Domingos</option>
                            
                         </select>
                         </div>
