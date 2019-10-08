@@ -79,7 +79,12 @@
                     <input type="number" name="n1"><br>
                 Segundo Numero:<br>
                     <input type="number" name="n2"><br><br>
-
+                    @if($texto)
+                    <div class="alert alert-success font-weight-bold" role="alert">
+                    {{$texto}}
+                    </div>
+                    @endif
+                
                     <input type="submit"><br><br>
                 </form><br>
                 <div>

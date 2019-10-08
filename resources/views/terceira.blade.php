@@ -90,15 +90,19 @@
                         
                         <select class="custom-select" name="semana" id="inputGroupSelect01">
                             <option name="dias" value="6">Dias semanais + sabados</option>
-                            <option name="dom" value="7">Domingos</option>
+                            <option name="dias" value="7">Domingos</option>
                            
                         </select>
                         </div>
                 
                 Digite suas horas trabalhadas:<br>
                     <input type="number" name="hrs_trab" id="jj"><br>
-                Seu total de hoje é:<br>
-                    <input type="text" name="custo_p"><br><br>
+               <br><br>
+                    @if($resul)
+                    <div class="alert alert-success font-weight-bold" role="alert">
+                    {{$resul}}
+                    </div>
+                    @endif
 
                     <input type="submit"><br><br>
                 </form><br>

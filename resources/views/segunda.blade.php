@@ -77,9 +77,12 @@
                 
                 Digite o número de estadias:<br>
                     <input type="number" name="estadias_n"><br>
-                Sua passagem custa:<br>
-                    <input type="text" name="custo_p" placeholder=""><br><br>
-
+                <br><br>
+                    @if($texto)
+                    <div class="alert alert-success font-weight-bold" role="alert">
+                    {{$texto}}
+                    </div>
+                    @endif
                     <input type="submit"><br><br>
                 </form><br>
                 <div>

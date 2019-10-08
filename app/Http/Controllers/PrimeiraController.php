@@ -11,15 +11,15 @@ class PrimeiraController extends Controller
         $n1 = $request->input('n1');
         $n2 = $request->input('n2');
         if ($n1 > $n2) {
-            echo "Está crescente";
+            $texto =  "Está crescente";
          } elseif ($n1 == $n2) {
-            echo "Os dois estao iguais";
+            $texto =  "Os dois estao iguais";
          } else {
-            echo "Está decrescente";
+            $texto =  "Está decrescente";
          }
 
         $primeira = session ('primeira');
-        return view ('primeira', compact(['primeira']));
+        return view ('primeira', ['texto' => $texto]);
 
        
        

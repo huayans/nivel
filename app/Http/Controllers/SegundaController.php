@@ -15,11 +15,11 @@ class SegundaController extends Controller
         if($num_dia > 7 ){
           $resultado_pass_final = $resultado_pass - ($resultado_pass /100 *$pctgm);
           
-          echo "Sua passagem  com desconto é de:".$resultado_pass_final;  
-        }else{echo "Sua passagem custa :". $resultado_pass;
+          $texto = "Sua passagem  com desconto é de:".$resultado_pass_final;  
+        }else{$texto = "Sua passagem custa :". $resultado_pass;
         }
         
         $segunda = session ('segunda');
-        return view ('segunda', compact(['segunda']));
+        return view ('segunda', ['texto'=>$texto]);
     }
 }
