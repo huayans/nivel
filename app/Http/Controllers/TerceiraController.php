@@ -23,8 +23,7 @@ class TerceiraController extends Controller
                     $resul_noite = $noturno * $hr_trab + 300 * $hr_trab ;
                     echo"Seu total no domingo diurno é de :". $resul_dia."----";
                     echo"Seu total no domingo noturno é de :" . $resul_noite;
-                }if ($dia_d_sem != $semana)
-                
+                }
         $terceira = session ('terceira');
         return view ('terceira', compact(['terceira']));
     }
