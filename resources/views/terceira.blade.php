@@ -73,39 +73,25 @@
                     Terceira Questão   
                     
                 </div>
-                <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Escolha o turno
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Diurno</a>
-                    <a class="dropdown-item" href="#">Noturno</a>
-                    
-                </div>
-                </div><br>
-
-                <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Ecolha o dia que esta trabalhando
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Semana e Sabados</a>
-                    <a class="dropdown-item" href="#">Domingos</a>
-                    
-                </div>
-                </div><br>
+                
                 
                 
                 <form method="get" action="{{route('terc')}}" >
 
                                         <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                            <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                            <label class="input-group-text" for="inputGroupSelect01">Escolha o turno</label>
                         </div>
-                        <select class="custom-select" name="inputGroupSelect01" id="inputGroupSelect01">
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                        <select class="custom-select" name="turno" id="inputGroupSelect01">
+                            <option name="turno1" value="1">Diurno</option>
+                            <option name="turno2" value="2">Noturno</option>
+                           
+                        </select>
+                        
+                        <select class="custom-select" name="semana" id="inputGroupSelect01">
+                            <option name="dias" value="1">Dias semanais + sabados</option>
+                            <option name="dom" value="2">Domingos</option>
+                           
                         </select>
                         </div>
                 

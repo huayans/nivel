@@ -8,6 +8,8 @@ class TerceiraController extends Controller
 {
     public function terceira(Request $request, $diurno=500,$noturno=800, $dia_d_sem=7){
         $hr_trab = $request->input('hrs_trab');
+        $turno = $request->input('turno');
+        $semana = $request->input('semana');
             
             $resul_dia = $diurno * $hr_trab;
             $resul_noite = $noturno * $hr_trab;
