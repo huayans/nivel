@@ -19,7 +19,7 @@ class SegundaController extends Controller
         }else{$texto = "Sua passagem custa :". $resultado_pass;
         }
         
-        $segunda = session ('segunda');
+        
         return view ('segunda', ['texto'=>$texto]);
     }
 }

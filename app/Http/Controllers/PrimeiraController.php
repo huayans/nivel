@@ -18,7 +18,7 @@ class PrimeiraController extends Controller
             $texto =  "Está decrescente";
          }
 
-        $primeira = session ('primeira');
+        
         return view ('primeira', ['texto' => $texto]);
 
        
